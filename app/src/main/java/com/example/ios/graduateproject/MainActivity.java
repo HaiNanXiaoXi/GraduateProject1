@@ -24,7 +24,6 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
     RadioGroup mcontrpller;
 
     private FragmentManager fm;
-    private FragmentTransaction transaction;
     private Fragment showfragment;
 
     @Override
@@ -42,7 +41,7 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
 
         fm = getSupportFragmentManager();
 
-        transaction = fm.beginTransaction();
+        FragmentTransaction transaction = fm.beginTransaction();
 
         showfragment = new MusicFragment();
 

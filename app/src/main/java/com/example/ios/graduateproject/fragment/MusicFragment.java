@@ -53,13 +53,12 @@ public class MusicFragment extends BaseFragment {
     }
 
     private void initView() {
-        pagerAdapter = new MusicViewPagerAdapter(getFragmentManager(), getData());
+        /*pagerAdapter = new MusicViewPagerAdapter(getFragmentManager(), getData());
         musicViewPager.setAdapter(pagerAdapter);
-        musicTablayout.setupWithViewPager(musicViewPager);
+        musicTablayout.setupWithViewPager(musicViewPager);*/
     }
 
     public List<Fragment> getData() {
-
 
 
         return null;

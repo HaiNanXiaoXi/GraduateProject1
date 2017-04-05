@@ -3,7 +3,6 @@ package com.example.ios.graduateproject.adapter;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
-import android.telephony.TelephonyManager;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,23 +10,23 @@ import java.util.List;
 /**
  * Created by ios on 2017/3/27.
  */
-public class MusicViewPagerAdapter extends FragmentPagerAdapter {
+public class LocalityViewPagerAdapter extends FragmentPagerAdapter {
 
     private List<Fragment> list;
 
     private List<String> Strings;
 
-    public MusicViewPagerAdapter(FragmentManager fm, List<Fragment> list) {
+    public LocalityViewPagerAdapter(FragmentManager fm, List<Fragment> list) {
         super(fm);
         if (list != null) {
             this.list = list;
         } else {
-            list = new ArrayList<>();
+            this.list = new ArrayList<>();
         }
 
         Strings = new ArrayList<>();
-        Strings.add("歌手");
-        Strings.add("榜单");
+        Strings.add("音乐");
+        Strings.add("视频");
     }
 
     @Override
